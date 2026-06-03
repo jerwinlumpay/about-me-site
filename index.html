@@ -11,27 +11,27 @@
         
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #0f172a;
-            color: #f8fafc;
+            background-color: #fcfbfa; /* Pearl White Base */
+            color: #2d2922; /* Deep Charcoal Taupe for readable contrast */
             scroll-behavior: smooth;
         }
 
         .glow-card {
             position: relative;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            background: rgba(30, 41, 59, 0.5);
+            border: 1px solid rgba(197, 160, 89, 0.15); /* Soft Khaki Border */
+            background: rgba(255, 255, 255, 0.8);
         }
 
         .glow-card:hover {
             transform: translateY(-5px);
-            border-color: rgba(99, 102, 241, 0.4);
-            box-shadow: 0 0 30px rgba(99, 102, 241, 0.25);
-            background: rgba(30, 41, 59, 0.8);
+            border-color: rgba(197, 160, 89, 0.4);
+            box-shadow: 0 10px 30px rgba(197, 160, 89, 0.12); /* Subtle Khaki Ambient Glow */
+            background: rgba(255, 255, 255, 1);
         }
 
         .gradient-text {
-            background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+            background: linear-gradient(135deg, #a38241 0%, #c5a059 50%, #85672e 100%); /* Rich Professional Khaki Gradient */
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -58,73 +58,73 @@
 </head>
 <body class="overflow-x-hidden antialiased">
 
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0f172a]/80 backdrop-blur-md border-b border-slate-800">
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#fcfbfa]/80 backdrop-blur-md border-b border-stone-200/60">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <span class="text-xl font-bold tracking-wider uppercase gradient-text">Jerwin Lumpay</span>
             
-            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-400">
-                <a href="#home" class="hover:text-indigo-400 transition">Home</a>
-                <a href="#competencies" class="hover:text-indigo-400 transition">Competencies</a>
-                <a href="#experience" class="hover:text-indigo-400 transition">Experience</a>
-                <a href="#education" class="hover:text-indigo-400 transition">Education</a>
-                <a href="#credentials-gallery" class="hover:text-indigo-400 transition">Certificates</a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-stone-600">
+                <a href="#home" class="hover:text-[#a38241] transition">Home</a>
+                <a href="#competencies" class="hover:text-[#a38241] transition">Competencies</a>
+                <a href="#experience" class="hover:text-[#a38241] transition">Experience</a>
+                <a href="#education" class="hover:text-[#a38241] transition">Education</a>
+                <a href="#credentials-gallery" class="hover:text-[#a38241] transition">Certificates</a>
             </div>
             
             <div class="hidden md:block">
-                <a href="mailto:jerwinlumpay@outlook.com" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 text-sm font-semibold hover:opacity-90 transition shadow-lg shadow-indigo-500/20">Contact Me</a>
+                <a href="mailto:jerwinlumpay@outlook.com" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-[#a38241] to-[#c5a059] text-sm font-semibold text-white hover:opacity-90 transition shadow-lg shadow-[#a38241]/20">Contact Me</a>
             </div>
 
-            <button id="mobile-menu-toggle" class="md:hidden p-2 text-slate-400 hover:text-white focus:outline-none z-50">
+            <button id="mobile-menu-toggle" class="md:hidden p-2 text-stone-500 hover:text-stone-900 focus:outline-none z-50">
                 <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
             </button>
         </div>
     </nav>
 
-    <div id="mobile-menu" class="fixed inset-0 z-40 bg-[#0f172a]/95 backdrop-blur-lg transform translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col justify-center items-center space-y-8 text-xl font-medium">
-        <a href="#home" class="text-slate-300 hover:text-indigo-400 transition" onclick="toggleMenu()">Home</a>
-        <a href="#competencies" class="text-slate-300 hover:text-indigo-400 transition" onclick="toggleMenu()">Competencies</a>
-        <a href="#experience" class="text-slate-300 hover:text-indigo-400 transition" onclick="toggleMenu()">Experience</a>
-        <a href="#education" class="text-slate-300 hover:text-indigo-400 transition" onclick="toggleMenu()">Education</a>
-        <a href="#credentials-gallery" class="text-slate-300 hover:text-indigo-400 transition" onclick="toggleMenu()">Certificates</a>
-        <a href="mailto:jerwinlumpay@outlook.com" class="px-6 py-3 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 text-sm font-semibold text-white shadow-lg shadow-indigo-500/20" onclick="toggleMenu()">Contact Me</a>
+    <div id="mobile-menu" class="fixed inset-0 z-40 bg-[#fcfbfa]/95 backdrop-blur-lg transform translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col justify-center items-center space-y-8 text-xl font-medium">
+        <a href="#home" class="text-stone-700 hover:text-[#a38241] transition" onclick="toggleMenu()">Home</a>
+        <a href="#competencies" class="text-stone-700 hover:text-[#a38241] transition" onclick="toggleMenu()">Competencies</a>
+        <a href="#experience" class="text-stone-700 hover:text-[#a38241] transition" onclick="toggleMenu()">Experience</a>
+        <a href="#education" class="text-stone-700 hover:text-[#a38241] transition" onclick="toggleMenu()">Education</a>
+        <a href="#credentials-gallery" class="text-stone-700 hover:text-[#a38241] transition" onclick="toggleMenu()">Certificates</a>
+        <a href="mailto:jerwinlumpay@outlook.com" class="px-6 py-3 rounded-full bg-gradient-to-r from-[#a38241] to-[#c5a059] text-sm font-semibold text-white shadow-lg shadow-[#a38241]/20" onclick="toggleMenu()">Contact Me</a>
     </div>
 
     <section id="home" class="min-h-screen pt-28 flex items-center justify-center relative px-6 max-w-7xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
             
             <div class="lg:col-span-7 space-y-6 text-center lg:text-left order-2 lg:order-1">
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider">
-                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Immediate Joiner
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#a38241]/10 border border-[#a38241]/20 text-[#a38241] text-xs font-semibold uppercase tracking-wider">
+                    <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span> Immediate Joiner
                 </div>
-                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight">
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-stone-900">
                     Hi, I'm <span class="gradient-text">Jerwin Lumpay</span>
                 </h1>
-                <p class="text-lg sm:text-xl font-medium text-slate-400">
+                <p class="text-lg sm:text-xl font-medium text-stone-600">
                     Office Administration | Customer Experience | Operations
                 </p>
-                <p class="text-slate-400 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                <p class="text-stone-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
                     Supportive and dedicated Customer Support Professional with over 8 years of experience in high volume administrative environments. Expert in Data Entry, Scheduling, and providing world class Customer Support through phone and email channels. Proven track record in managing client bookings and multitasking within CRM systems to drive Customer Success in fast paced operations.
                 </p>
-                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-slate-400 pt-2">
-                    <span class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-indigo-400"></i> Dubai, UAE</span>
-                    <span class="hidden sm:inline text-slate-600">|</span>
-                    <span class="flex items-center gap-2"><i class="fa-solid fa-envelope text-indigo-400"></i> jerwinlumpay@outlook.com</span>
-                    <span class="hidden sm:inline text-slate-600">|</span>
-                    <span class="flex items-center gap-2"><i class="fa-solid fa-phone text-indigo-400"></i> +971544609927</span>
+                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-stone-500 pt-2">
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-[#a38241]"></i> Dubai, UAE</span>
+                    <span class="hidden sm:inline text-stone-300">|</span>
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-envelope text-[#a38241]"></i> jerwinlumpay@outlook.com</span>
+                    <span class="hidden sm:inline text-stone-300">|</span>
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-phone text-[#a38241]"></i> +971544609927</span>
                 </div>
                 <div class="pt-4 flex flex-wrap justify-center lg:justify-start gap-4">
-                    <a href="#experience" class="px-8 py-4 rounded-xl bg-slate-800 hover:bg-slate-700 font-medium transition border border-slate-700 flex items-center gap-2">
+                    <a href="#experience" class="px-8 py-4 rounded-xl bg-stone-100 hover:bg-stone-200 text-stone-800 font-medium transition border border-stone-200 flex items-center gap-2">
                         View My Work <i class="fa-solid fa-arrow-right text-xs"></i>
                     </a>
-                    <a href="CV Jerwin_Lumpay_.pdf" download class="px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-500 font-semibold transition text-white shadow-lg shadow-indigo-500/20 flex items-center gap-2 hover:opacity-90">
+                    <a href="CV Jerwin_Lumpay_.pdf" download class="px-8 py-4 rounded-xl bg-gradient-to-r from-[#a38241] to-[#c5a059] font-semibold transition text-white shadow-lg shadow-[#a38241]/20 flex items-center gap-2 hover:opacity-90">
                         Download CV <i class="fa-solid fa-download text-xs"></i>
                     </a>
                 </div>
             </div>
 
             <div class="lg:col-span-5 flex justify-center order-1 lg:order-2">
-                <div class="relative w-72 sm:w-96 aspect-[1/2] rounded-3xl overflow-hidden bg-gradient-to-b from-slate-800 to-slate-900 border border-slate-700/50 shadow-2xl group">
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-transparent opacity-40 z-10"></div>
+                <div class="relative w-72 sm:w-96 aspect-[1/2] rounded-3xl overflow-hidden bg-gradient-to-b from-stone-100 to-stone-200 border border-stone-200 shadow-xl group">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#fcfbfa] via-transparent to-transparent opacity-20 z-10"></div>
                     <img id="headshot-photo" src="White BG Headshot.png" alt="Jerwin Lumpay Headshot Portrait" class="w-full h-full object-cover object-top scale-105 group-hover:scale-100 transition-transform duration-700">
                 </div>
             </div>
@@ -132,76 +132,76 @@
         </div>
     </section>
 
-    <section id="competencies" class="py-24 bg-[#0b0f19] border-y border-slate-900 px-6">
+    <section id="competencies" class="py-24 bg-[#f6f4f0] border-y border-stone-200/70 px-6">
         <div class="max-w-7xl mx-auto space-y-16">
             <div class="text-center space-y-4">
-                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">Core <span class="gradient-text">Competencies</span></h2>
-                <p class="text-slate-400 max-w-2xl mx-auto">A breakdown of my foundational operational areas backed by metrics and structured standards alignment.</p>
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-stone-900">Core <span class="gradient-text">Competencies</span></h2>
+                <p class="text-stone-600 max-w-2xl mx-auto">A breakdown of my foundational operational areas backed by metrics and structured standards alignment.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 
                 <div class="glow-card p-8 rounded-2xl space-y-4">
-                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 text-xl font-bold">
+                    <div class="w-12 h-12 rounded-xl bg-[#a38241]/10 flex items-center justify-center text-[#a38241] text-xl font-bold">
                         <i class="fa-solid fa-headset"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white">Customer Experience & Call Center Operations</h3>
-                    <p class="text-sm text-slate-400 leading-relaxed">
+                    <h3 class="text-xl font-bold text-stone-900">Customer Experience & Call Center Operations</h3>
+                    <p class="text-sm text-stone-600 leading-relaxed">
                         Expertise in high-volume multichannel queues, optimizing customer experiences, and executing precise resolution frameworks while maintaining key service level targets.
                     </p>
                     <div class="grid grid-cols-2 gap-3 pt-2 text-xs">
-                        <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800"><span class="text-indigo-400 font-bold block text-sm">85%</span> Call Center CSAT</div>
-                        <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800"><span class="text-indigo-400 font-bold block text-sm">7 Minutes</span> Target AHT</div>
-                        <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800"><span class="text-indigo-400 font-bold block text-sm">80%</span> FCR Target Achievement</div>
-                        <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800"><span class="text-indigo-400 font-bold block text-sm">80%</span> Reduced Escalation Log</div>
+                        <div class="bg-stone-50 p-3 rounded-lg border border-stone-200/60 text-stone-700"><span class="text-[#a38241] font-bold block text-sm">85%</span> Call Center CSAT</div>
+                        <div class="bg-stone-50 p-3 rounded-lg border border-stone-200/60 text-stone-700"><span class="text-[#a38241] font-bold block text-sm">7 Minutes</span> Target AHT</div>
+                        <div class="bg-stone-50 p-3 rounded-lg border border-stone-200/60 text-stone-700"><span class="text-[#a38241] font-bold block text-sm">80%</span> FCR Target Achievement</div>
+                        <div class="bg-stone-50 p-3 rounded-lg border border-stone-200/60 text-stone-700"><span class="text-[#a38241] font-bold block text-sm">80%</span> Reduced Escalation Log</div>
                     </div>
                 </div>
 
                 <div class="glow-card p-8 rounded-2xl space-y-4">
-                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 text-xl font-bold">
+                    <div class="w-12 h-12 rounded-xl bg-[#a38241]/10 flex items-center justify-center text-[#a38241] text-xl font-bold">
                         <i class="fa-solid fa-shield-halved"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white">Finance KYC & Compliance Regulations</h3>
-                    <p class="text-sm text-slate-400 leading-relaxed">
+                    <h3 class="text-xl font-bold text-stone-900">Finance KYC & Compliance Regulations</h3>
+                    <p class="text-sm text-stone-600 leading-relaxed">
                         Strict identification compliance processing across personal data regulatory structures, identity validation frameworks, and security verification standards.
                     </p>
                     <div class="grid grid-cols-2 gap-3 pt-2 text-xs">
-                        <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800"><span class="text-purple-400 font-bold block text-sm">100% Compliant</span> US Form I-9 & E-Verify</div>
-                        <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800"><span class="text-purple-400 font-bold block text-sm">Secure Management</span> SPI and PII Handling</div>
-                        <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800"><span class="text-purple-400 font-bold block text-sm">ISO Certified</span> 9001 / 27001 Alignment</div>
-                        <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800"><span class="text-purple-400 font-bold block text-sm">Mitigation Control</span> Finance KYC Standards</div>
+                        <div class="bg-stone-50 p-3 rounded-lg border border-stone-200/60 text-stone-700"><span class="text-[#a38241] font-bold block text-sm">100% Compliant</span> US Form I-9 & E-Verify</div>
+                        <div class="bg-stone-50 p-3 rounded-lg border border-stone-200/60 text-stone-700"><span class="text-[#a38241] font-bold block text-sm">Secure Management</span> SPI and PII Handling</div>
+                        <div class="bg-stone-50 p-3 rounded-lg border border-stone-200/60 text-stone-700"><span class="text-[#a38241] font-bold block text-sm">ISO Certified</span> 9001 / 27001 Alignment</div>
+                        <div class="bg-stone-50 p-3 rounded-lg border border-stone-200/60 text-stone-700"><span class="text-[#a38241] font-bold block text-sm">Mitigation Control</span> Finance KYC Standards</div>
                     </div>
                 </div>
 
                 <div class="glow-card p-8 rounded-2xl space-y-4">
-                    <div class="w-12 h-12 rounded-xl bg-pink-500/10 flex items-center justify-center text-pink-400 text-xl font-bold">
+                    <div class="w-12 h-12 rounded-xl bg-[#a38241]/10 flex items-center justify-center text-[#a38241] text-xl font-bold">
                         <i class="fa-solid fa-folder-tree"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white">Document Control & File Management</h3>
-                    <p class="text-sm text-slate-400 leading-relaxed">
+                    <h3 class="text-xl font-bold text-stone-900">Document Control & File Management</h3>
+                    <p class="text-sm text-stone-600 leading-relaxed">
                         Comprehensive administration over corporate records management architecture, data tracking models, and cross-departmental operations logging files.
                     </p>
                     <div class="grid grid-cols-2 gap-3 pt-2 text-xs">
-                        <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800"><span class="text-pink-400 font-bold block text-sm">&lt; 24 Hours</span> Strict SLA Targets</div>
-                        <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800"><span class="text-pink-400 font-bold block text-sm">Systematized</span> Document Control Systems</div>
-                        <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800"><span class="text-pink-400 font-bold block text-sm">Structured Matrix</span> File Management Models</div>
-                        <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800"><span class="text-pink-400 font-bold block text-sm">90% Reduction</span> Out-of-Compliance Cases</div>
+                        <div class="bg-stone-50 p-3 rounded-lg border border-stone-200/60 text-stone-700"><span class="text-[#a38241] font-bold block text-sm">&lt; 24 Hours</span> Strict SLA Targets</div>
+                        <div class="bg-stone-50 p-3 rounded-lg border border-stone-200/60 text-stone-700"><span class="text-[#a38241] font-bold block text-sm">Systematized</span> Document Control Systems</div>
+                        <div class="bg-stone-50 p-3 rounded-lg border border-stone-200/60 text-stone-700"><span class="text-[#a38241] font-bold block text-sm">Structured Matrix</span> File Management Models</div>
+                        <div class="bg-stone-50 p-3 rounded-lg border border-stone-200/60 text-stone-700"><span class="text-[#a38241] font-bold block text-sm">90% Reduction</span> Out-of-Compliance Cases</div>
                     </div>
                 </div>
 
                 <div class="glow-card p-8 rounded-2xl space-y-4">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-xl font-bold">
+                    <div class="w-12 h-12 rounded-xl bg-[#a38241]/10 flex items-center justify-center text-[#a38241] text-xl font-bold">
                         <i class="fa-solid fa-chart-line"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white">Team Performance & Sales Strategy</h3>
-                    <p class="text-sm text-slate-400 leading-relaxed">
+                    <h3 class="text-xl font-bold text-stone-900">Team Performance & Sales Strategy</h3>
+                    <p class="text-sm text-stone-600 leading-relaxed">
                         Sustained management over baseline metrics, team performance coaching targets, and product feature recommendation upsell matrices.
                     </p>
                     <div class="grid grid-cols-2 gap-3 pt-2 text-xs">
-                        <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800"><span class="text-emerald-400 font-bold block text-sm">No Less Than 85%</span> Team Occupancy Metrics</div>
-                        <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800"><span class="text-emerald-400 font-bold block text-sm">Maintain 90%</span> QA Standards Score</div>
-                        <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800"><span class="text-emerald-400 font-bold block text-sm">90% Avg Daily</span> Team Attendance Records</div>
-                        <div class="bg-slate-900/60 p-3 rounded-lg border border-slate-800"><span class="text-emerald-400 font-bold block text-sm">$10K / $20K Mo.</span> Upgrade / New Line Sales</div>
+                        <div class="bg-stone-50 p-3 rounded-lg border border-stone-200/60 text-stone-700"><span class="text-[#a38241] font-bold block text-sm">No Less Than 85%</span> Team Occupancy Metrics</div>
+                        <div class="bg-stone-50 p-3 rounded-lg border border-stone-200/60 text-stone-700"><span class="text-[#a38241] font-bold block text-sm">Maintain 90%</span> QA Standards Score</div>
+                        <div class="bg-stone-50 p-3 rounded-lg border border-stone-200/60 text-stone-700"><span class="text-[#a38241] font-bold block text-sm">90% Avg Daily</span> Team Attendance Records</div>
+                        <div class="bg-stone-50 p-3 rounded-lg border border-stone-200/60 text-stone-700"><span class="text-[#a38241] font-bold block text-sm">$10K / $20K Mo.</span> Upgrade / New Line Sales</div>
                     </div>
                 </div>
 
@@ -211,8 +211,8 @@
 
     <section id="experience" class="py-24 px-6 max-w-7xl mx-auto">
         <div class="text-center space-y-4 mb-20">
-            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">Professional <span class="gradient-text">Experience</span></h2>
-            <p class="text-slate-400 max-w-2xl mx-auto">Chronological progression of my professional history. Hover over any experience block to view detailed insight glow.</p>
+            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-stone-900">Professional <span class="gradient-text">Experience</span></h2>
+            <p class="text-stone-600 max-w-2xl mx-auto">Chronological progression of my professional history. Hover over any experience block to view detailed insight glow.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-12 gap-8 max-w-6xl mx-auto items-start">
@@ -222,15 +222,15 @@
                 <div class="glow-card p-6 rounded-2xl space-y-3">
                     <div class="flex justify-between items-start flex-wrap gap-2">
                         <div>
-                            <h4 class="text-lg font-bold text-white">Sky Zone</h4>
-                            <span class="text-slate-400 text-sm">Dubai, UAE</span>
+                            <h4 class="text-lg font-bold text-stone-900">Sky Zone</h4>
+                            <span class="text-stone-500 text-sm">Dubai, UAE</span>
                         </div>
-                        <span class="inline-block px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-semibold tracking-wider border border-indigo-500/20">
+                        <span class="inline-block px-3 py-1 rounded-full bg-[#a38241]/10 text-[#a38241] text-xs font-semibold tracking-wider border border-[#a38241]/20">
                             05/2025 - 05/2026
                         </span>
                     </div>
-                    <h5 class="text-md font-bold text-indigo-400 uppercase tracking-wide">Operations & Front Desk Officer</h5>
-                    <ul class="text-sm text-slate-400 space-y-2 list-disc list-inside marker:text-indigo-400">
+                    <h5 class="text-md font-bold text-[#a38241] uppercase tracking-wide">Operations & Front Desk Officer</h5>
+                    <ul class="text-sm text-stone-600 space-y-2 list-disc list-inside marker:text-[#a38241]">
                         <li>Managed high-volume customer inquiries, bookings, memberships, front desk operations, and POS transactions while delivering excellent customer service in a fast-paced environment.</li>
                         <li>Generated $80K+ revenue through upselling memberships and promotions while consistently achieving KPIs, sales targets, AHT, and customer satisfaction scores.</li>
                         <li>Provided front desk and administrative support including scheduling, records management, onboarding assistance, and coordination with departments to ensure smooth daily operations.</li>
@@ -240,15 +240,15 @@
                 <div class="glow-card p-6 rounded-2xl space-y-3">
                     <div class="flex justify-between items-start flex-wrap gap-2">
                         <div>
-                            <h4 class="text-lg font-bold text-white">ADP</h4>
-                            <span class="text-slate-400 text-sm">Manila, Philippines</span>
+                            <h4 class="text-lg font-bold text-stone-900">ADP</h4>
+                            <span class="text-stone-500 text-sm">Manila, Philippines</span>
                         </div>
-                        <span class="inline-block px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 text-xs font-semibold tracking-wider border border-purple-500/20">
+                        <span class="inline-block px-3 py-1 rounded-full bg-[#a38241]/10 text-[#a38241] text-xs font-semibold tracking-wider border border-[#a38241]/20">
                             09/2022 - 03/2025
                         </span>
                     </div>
-                    <h5 class="text-md font-bold text-purple-400 uppercase tracking-wide">Client Services Specialist</h5>
-                    <ul class="text-sm text-slate-400 space-y-2 list-disc list-inside marker:text-purple-400">
+                    <h5 class="text-md font-bold text-[#a38241] uppercase tracking-wide">Client Services Specialist</h5>
+                    <ul class="text-sm text-stone-600 space-y-2 list-disc list-inside marker:text-[#a38241]">
                         <li>Supported global clients including Sodexo, Siemens Energy, and Randstad with onboarding, customer support, and administrative coordination.</li>
                         <li>Managed US Form I-9 and E-Verify processes with 100% compliance while ensuring data accuracy, confidentiality, and proper handling of PII/SPI information.</li>
                         <li>Helped reduce out-of-compliance I-9 and E-Verify cases by 90% through accurate documentation review, audit-ready Excel reports, and strong file management.</li>
@@ -258,15 +258,15 @@
                 <div class="glow-card p-6 rounded-2xl space-y-3">
                     <div class="flex justify-between items-start flex-wrap gap-2">
                         <div>
-                            <h4 class="text-lg font-bold text-white">Ibex</h4>
-                            <span class="text-slate-400 text-sm">Manila, Philippines</span>
+                            <h4 class="text-lg font-bold text-stone-900">Ibex</h4>
+                            <span class="text-stone-500 text-sm">Manila, Philippines</span>
                         </div>
-                        <span class="inline-block px-3 py-1 rounded-full bg-pink-500/10 text-pink-400 text-xs font-semibold tracking-wider border border-pink-500/20">
+                        <span class="inline-block px-3 py-1 rounded-full bg-[#a38241]/10 text-[#a38241] text-xs font-semibold tracking-wider border border-[#a38241]/20">
                             04/2018 - 08/2022
                         </span>
                     </div>
-                    <h5 class="text-md font-bold text-pink-400 uppercase tracking-wide">Customer Service Team Lead</h5>
-                    <ul class="text-sm text-slate-400 space-y-2 list-disc list-inside marker:text-pink-400">
+                    <h5 class="text-md font-bold text-[#a38241] uppercase tracking-wide">Customer Service Team Lead</h5>
+                    <ul class="text-sm text-stone-600 space-y-2 list-disc list-inside marker:text-[#a38241]">
                         <li>Promoted from Customer Service Agent to Team Lead managing 15 agents supporting AT&T and GoDaddy, earning “Top Team” recognition for performance and service excellence.</li>
                         <li>Monitored team KPIs including 85% CSAT, 80% FCR, 7-minute AHT, and SLA targets under 24 hours while conducting coaching sessions and business reviews with management and clients.</li>
                         <li>Reduced customer escalations by 80% through real-time support, outbound follow-ups, de-escalation handling, and process improvements while coordinating with QA, training, and workforce teams to maintain 95% QA scores and Workforce team for occupancy no less than 85%.</li>
@@ -280,15 +280,15 @@
                 <div class="glow-card p-6 rounded-2xl space-y-3">
                     <div class="flex justify-between items-start flex-wrap gap-2">
                         <div>
-                            <h4 class="text-lg font-bold text-white">ResultsCX</h4>
-                            <span class="text-slate-400 text-sm">Manila, Philippines</span>
+                            <h4 class="text-lg font-bold text-stone-900">ResultsCX</h4>
+                            <span class="text-stone-500 text-sm">Manila, Philippines</span>
                         </div>
-                        <span class="inline-block px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold tracking-wider border border-emerald-500/20">
+                        <span class="inline-block px-3 py-1 rounded-full bg-[#a38241]/10 text-[#a38241] text-xs font-semibold tracking-wider border border-[#a38241]/20">
                             11/2016 - 03/2018
                         </span>
                     </div>
-                    <h5 class="text-md font-bold text-emerald-400 uppercase tracking-wide">Sales Associate</h5>
-                    <ul class="text-sm text-slate-400 space-y-2 list-disc list-inside marker:text-emerald-400">
+                    <h5 class="text-md font-bold text-[#a38241] uppercase tracking-wide">Sales Associate</h5>
+                    <ul class="text-sm text-stone-600 space-y-2 list-disc list-inside marker:text-[#a38241]">
                         <li>Handled inbound and outbound calls for telecom products while consistently achieving 90% monthly sales targets in a fast-paced call center environment.</li>
                         <li>Assessed customer needs through probing questions and recommended suitable products, upgrades, and services to improve customer satisfaction and sales conversion.</li>
                         <li>Processed an average of $10K monthly in upgrades and $20K monthly in new line activations and port-ins through effective sales and customer engagement.</li>
@@ -298,15 +298,15 @@
                 <div class="glow-card p-6 rounded-2xl space-y-3">
                     <div class="flex justify-between items-start flex-wrap gap-2">
                         <div>
-                            <h4 class="text-lg font-bold text-white">Sutherland</h4>
-                            <span class="text-slate-400 text-sm">Manila, Philippines</span>
+                            <h4 class="text-lg font-bold text-stone-900">Sutherland</h4>
+                            <span class="text-stone-500 text-sm">Manila, Philippines</span>
                         </div>
-                        <span class="inline-block px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-semibold tracking-wider border border-blue-500/20">
+                        <span class="inline-block px-3 py-1 rounded-full bg-[#a38241]/10 text-[#a38241] text-xs font-semibold tracking-wider border border-[#a38241]/20">
                             04/2015 - 10/2016
                         </span>
                     </div>
-                    <h5 class="text-md font-bold text-blue-400 uppercase tracking-wide">Customer Service Representative</h5>
-                    <ul class="text-sm text-slate-400 space-y-2 list-disc list-inside marker:text-blue-400">
+                    <h5 class="text-md font-bold text-[#a38241] uppercase tracking-wide">Customer Service Representative</h5>
+                    <ul class="text-sm text-stone-600 space-y-2 list-disc list-inside marker:text-[#a38241]">
                         <li>Handled merchant disputes, chargebacks, refunds, and payment inquiries, reducing disputes by 60% and refund requests by 45%.</li>
                         <li>Resolved payment processing issues while ensuring 100% compliance with Visa, Mastercard, and AMEX dispute policies, including KYC, AML, CFT, and PII/SPI standards.</li>
                     </ul>
@@ -317,19 +317,19 @@
         </div>
     </section>
 
-    <section id="education" class="py-24 bg-[#0b0f19] px-6">
+    <section id="education" class="py-24 bg-[#f6f4f0] px-6">
         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
             
             <div class="space-y-8">
                 <div class="space-y-2">
-                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Academic <span class="gradient-text">Foundation</span></h2>
-                    <p class="text-slate-400 text-sm">Core university business qualification framework.</p>
+                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-stone-900">Academic <span class="gradient-text">Foundation</span></h2>
+                    <p class="text-stone-500 text-sm">Core university business qualification framework.</p>
                 </div>
-                <div class="glow-card p-6 rounded-2xl border-l-4 border-l-indigo-500 space-y-2">
-                    <span class="text-xs text-indigo-400 font-semibold tracking-wide">Graduated: 06/2010 - 10/2014</span>
-                    <h3 class="text-xl font-bold text-white">BS, Business Administration and Management</h3>
-                    <p class="text-slate-400 text-sm font-medium">Concordia College</p>
-                    <p class="text-xs text-slate-500 pt-2 leading-relaxed">
+                <div class="glow-card p-6 rounded-2xl border-l-4 border-l-[#a38241] space-y-2">
+                    <span class="text-xs text-[#a38241] font-semibold tracking-wide">Graduated: 06/2010 - 10/2014</span>
+                    <h3 class="text-xl font-bold text-stone-900">BS, Business Administration and Management</h3>
+                    <p class="text-stone-600 text-sm font-medium">Concordia College</p>
+                    <p class="text-xs text-stone-500 pt-2 leading-relaxed">
                         Acquired structural insight covering corporate workflow engineering, human resource models, operational oversight metrics, and organizational systems governance.
                     </p>
                 </div>
@@ -337,40 +337,40 @@
 
             <div class="space-y-8">
                 <div class="space-y-2">
-                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Professional <span class="gradient-text">Certifications</span></h2>
-                    <p class="text-slate-400 text-sm">Valid credentials validating industry excellence domains.</p>
+                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-stone-900">Professional <span class="gradient-text">Certifications</span></h2>
+                    <p class="text-stone-500 text-sm">Valid credentials validating industry excellence domains.</p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     
                     <div class="glow-card p-5 rounded-xl flex items-start gap-4">
-                        <div class="text-purple-400 mt-1"><i class="fa-solid fa-award text-lg"></i></div>
+                        <div class="text-[#a38241] mt-1"><i class="fa-solid fa-award text-lg"></i></div>
                         <div>
-                            <h4 class="text-white font-semibold text-sm">Six Sigma White Belt</h4>
-                            <p class="text-slate-500 text-xs mt-1">Process Optimization</p>
+                            <h4 class="text-stone-900 font-semibold text-sm">Six Sigma White Belt</h4>
+                            <p class="text-stone-500 text-xs mt-1">Process Optimization</p>
                         </div>
                     </div>
 
                     <div class="glow-card p-5 rounded-xl flex items-start gap-4">
-                        <div class="text-purple-400 mt-1"><i class="fa-solid fa-square-check text-lg"></i></div>
+                        <div class="text-[#a38241] mt-1"><i class="fa-solid fa-square-check text-lg"></i></div>
                         <div>
-                            <h4 class="text-white font-semibold text-sm">ISO 9001 / 27001 Standards</h4>
-                            <p class="text-slate-500 text-xs mt-1">Quality & Security Systems</p>
+                            <h4 class="text-stone-900 font-semibold text-sm">ISO 9001 / 27001 Standards</h4>
+                            <p class="text-stone-500 text-xs mt-1">Quality & Security Systems</p>
                         </div>
                     </div>
 
                     <div class="glow-card p-5 rounded-xl flex items-start gap-4">
-                        <div class="text-purple-400 mt-1"><i class="fa-solid fa-cubes text-lg"></i></div>
+                        <div class="text-[#a38241] mt-1"><i class="fa-solid fa-cubes text-lg"></i></div>
                         <div>
-                            <h4 class="text-white font-semibold text-sm">SAP S/4HANA</h4>
-                            <p class="text-slate-500 text-xs mt-1">Enterprise Resource Planning</p>
+                            <h4 class="text-stone-900 font-semibold text-sm">SAP S/4HANA</h4>
+                            <p class="text-stone-500 text-xs mt-1">Enterprise Resource Planning</p>
                         </div>
                     </div>
 
                     <div class="glow-card p-5 rounded-xl flex items-start gap-4">
-                        <div class="text-purple-400 mt-1"><i class="fa-solid fa-truck-ramp-box text-lg"></i></div>
+                        <div class="text-[#a38241] mt-1"><i class="fa-solid fa-truck-ramp-box text-lg"></i></div>
                         <div>
-                            <h4 class="text-white font-semibold text-sm">Supply Chain Management</h4>
-                            <p class="text-slate-500 text-xs mt-1">Logistics & Asset Distribution</p>
+                            <h4 class="text-stone-900 font-semibold text-sm">Supply Chain Management</h4>
+                            <p class="text-stone-500 text-xs mt-1">Logistics & Asset Distribution</p>
                         </div>
                     </div>
 
@@ -380,115 +380,115 @@
         </div>
     </section>
 
-    <section id="credentials-gallery" class="py-24 bg-[#070a13] border-t border-slate-900">
+    <section id="credentials-gallery" class="py-24 bg-[#fcfbfa] border-t border-stone-200/60">
         <div class="max-w-7xl mx-auto px-6 mb-16 text-center space-y-4">
-            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">Verified <span class="gradient-text">Qualifications Gallery</span></h2>
-            <p class="text-slate-400 max-w-2xl mx-auto text-sm">Continuous training frameworks mapping direct industry competencies. Direct visual layout of actual upload files.</p>
+            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-stone-900">Verified <span class="gradient-text">Qualifications Gallery</span></h2>
+            <p class="text-stone-600 max-w-2xl mx-auto text-sm">Continuous training frameworks mapping direct industry competencies. Direct visual layout of actual upload files.</p>
         </div>
 
         <div class="max-w-7xl mx-auto px-6">
             <div class="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
                 
                 <div class="break-inside-avoid glow-card p-4 rounded-2xl flex flex-col space-y-3">
-                    <img src="Six Sigma White Belt.jpg" alt="Six Sigma White Belt Certification" class="w-full h-auto rounded-xl object-cover border border-slate-800">
-                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-indigo-400/90 font-medium">Six Sigma White Belt</span><span class="bg-indigo-500/10 text-indigo-400 px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Quality</span></div>
+                    <img src="Six Sigma White Belt.jpg" alt="Six Sigma White Belt Certification" class="w-full h-auto rounded-xl object-cover border border-stone-200">
+                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-stone-800 font-medium">Six Sigma White Belt</span><span class="bg-[#a38241]/10 text-[#a38241] px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Quality</span></div>
                 </div>
 
                 <div class="break-inside-avoid glow-card p-4 rounded-2xl flex flex-col space-y-3">
-                    <img src="SAP S  4 HANA.jpg" alt="SAP S/4HANA Certification" class="w-full h-auto rounded-xl object-cover border border-slate-800">
-                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-purple-400/90 font-medium">SAP S/4HANA</span><span class="bg-purple-500/10 text-purple-400 px-2 py-0.5 rounded text-[10px] font-semibold uppercase">ERP Systems</span></div>
+                    <img src="SAP S  4 HANA.jpg" alt="SAP S/4HANA Certification" class="w-full h-auto rounded-xl object-cover border border-stone-200">
+                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-stone-800 font-medium">SAP S/4HANA</span><span class="bg-[#a38241]/10 text-[#a38241] px-2 py-0.5 rounded text-[10px] font-semibold uppercase">ERP Systems</span></div>
                 </div>
 
                 <div class="break-inside-avoid glow-card p-4 rounded-2xl flex flex-col space-y-3">
-                    <img src="Supply Chain Management.jpg" alt="Supply Chain Management Certification" class="w-full h-auto rounded-xl object-cover border border-slate-800">
-                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-pink-400/90 font-medium">Supply Chain Management</span><span class="bg-pink-500/10 text-pink-400 px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Logistics</span></div>
+                    <img src="Supply Chain Management.jpg" alt="Supply Chain Management Certification" class="w-full h-auto rounded-xl object-cover border border-stone-200">
+                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-stone-800 font-medium">Supply Chain Management</span><span class="bg-[#a38241]/10 text-[#a38241] px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Logistics</span></div>
                 </div>
 
                 <div class="break-inside-avoid glow-card p-4 rounded-2xl flex flex-col space-y-3">
-                    <img src="Operation Management.jpg" alt="Operation Management Certification" class="w-full h-auto rounded-xl object-cover border border-slate-800">
-                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-emerald-400/90 font-medium">Operation Management</span><span class="bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Operations</span></div>
+                    <img src="Operation Management.jpg" alt="Operation Management Certification" class="w-full h-auto rounded-xl object-cover border border-stone-200">
+                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-stone-800 font-medium">Operation Management</span><span class="bg-[#a38241]/10 text-[#a38241] px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Operations</span></div>
                 </div>
 
                 <div class="break-inside-avoid glow-card p-4 rounded-2xl flex flex-col space-y-3">
-                    <img src="Optimizing Your Work with Microsoft 365.jpg" alt="Optimizing Your Work with Microsoft 365" class="w-full h-auto rounded-xl object-cover border border-slate-800">
-                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-blue-400/90 font-medium">Optimizing Work (M365)</span><span class="bg-blue-500/10 text-blue-400 px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Productivity</span></div>
+                    <img src="Optimizing Your Work with Microsoft 365.jpg" alt="Optimizing Your Work with Microsoft 365" class="w-full h-auto rounded-xl object-cover border border-stone-200">
+                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-stone-800 font-medium">Optimizing Work (M365)</span><span class="bg-[#a38241]/10 text-[#a38241] px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Productivity</span></div>
                 </div>
 
                 <div class="break-inside-avoid glow-card p-4 rounded-2xl flex flex-col space-y-3">
-                    <img src="Predictable Success Leadership Styles.jpg" alt="Predictable Success Leadership Styles" class="w-full h-auto rounded-xl object-cover border border-slate-800">
-                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-indigo-400/90 font-medium">Leadership Styles</span><span class="bg-indigo-500/10 text-indigo-400 px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Management</span></div>
+                    <img src="Predictable Success Leadership Styles.jpg" alt="Predictable Success Leadership Styles" class="w-full h-auto rounded-xl object-cover border border-stone-200">
+                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-stone-800 font-medium">Leadership Styles</span><span class="bg-[#a38241]/10 text-[#a38241] px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Management</span></div>
                 </div>
 
                 <div class="break-inside-avoid glow-card p-4 rounded-2xl flex flex-col space-y-3">
-                    <img src="Procurement Management.jpg" alt="Procurement Management Certification" class="w-full h-auto rounded-xl object-cover border border-slate-800">
-                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-purple-400/90 font-medium">Procurement Management</span><span class="bg-purple-500/10 text-purple-400 px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Sourcing</span></div>
+                    <img src="Procurement Management.jpg" alt="Procurement Management Certification" class="w-full h-auto rounded-xl object-cover border border-stone-200">
+                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-stone-800 font-medium">Procurement Management</span><span class="bg-[#a38241]/10 text-[#a38241] px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Sourcing</span></div>
                 </div>
 
                 <div class="break-inside-avoid glow-card p-4 rounded-2xl flex flex-col space-y-3">
-                    <img src="Retail Management.jpg" alt="Retail Management Certification" class="w-full h-auto rounded-xl object-cover border border-slate-800">
-                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-pink-400/90 font-medium">Retail Management</span><span class="bg-pink-500/10 text-pink-400 px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Retail Operations</span></div>
+                    <img src="Retail Management.jpg" alt="Retail Management Certification" class="w-full h-auto rounded-xl object-cover border border-stone-200">
+                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-stone-800 font-medium">Retail Management</span><span class="bg-[#a38241]/10 text-[#a38241] px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Retail Operations</span></div>
                 </div>
 
                 <div class="break-inside-avoid glow-card p-4 rounded-2xl flex flex-col space-y-3">
-                    <img src="Time Management Fundamentals.jpg" alt="Time Management Fundamentals Certification" class="w-full h-auto rounded-xl object-cover border border-slate-800">
-                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-emerald-400/90 font-medium">Time Management</span><span class="bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Core Effectiveness</span></div>
+                    <img src="Time Management Fundamentals.jpg" alt="Time Management Fundamentals Certification" class="w-full h-auto rounded-xl object-cover border border-stone-200">
+                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-stone-800 font-medium">Time Management</span><span class="bg-[#a38241]/10 text-[#a38241] px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Core Effectiveness</span></div>
                 </div>
 
                 <div class="break-inside-avoid glow-card p-4 rounded-2xl flex flex-col space-y-3">
-                    <img src="Administrative Professional Foundations.jpg" alt="Administrative Professional Foundations" class="w-full h-auto rounded-xl object-cover border border-slate-800">
-                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-blue-400/90 font-medium">Administrative Professional</span><span class="bg-blue-500/10 text-blue-400 px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Admin</span></div>
+                    <img src="Administrative Professional Foundations.jpg" alt="Administrative Professional Foundations" class="w-full h-auto rounded-xl object-cover border border-stone-200">
+                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-stone-800 font-medium">Administrative Professional</span><span class="bg-[#a38241]/10 text-[#a38241] px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Admin</span></div>
                 </div>
 
                 <div class="break-inside-avoid glow-card p-4 rounded-2xl flex flex-col space-y-3">
-                    <img src="Career Essentials in Administrative Assistance by Microsoft and LinkedIn.jpg" alt="Career Essentials in Administrative Assistance" class="w-full h-auto rounded-xl object-cover border border-slate-800">
-                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-indigo-400/90 font-medium">Career Essentials Assist</span><span class="bg-indigo-500/10 text-indigo-400 px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Microsoft</span></div>
+                    <img src="Career Essentials in Administrative Assistance by Microsoft and LinkedIn.jpg" alt="Career Essentials in Administrative Assistance" class="w-full h-auto rounded-xl object-cover border border-stone-200">
+                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-stone-800 font-medium">Career Essentials Assist</span><span class="bg-[#a38241]/10 text-[#a38241] px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Microsoft</span></div>
                 </div>
 
                 <div class="break-inside-avoid glow-card p-4 rounded-2xl flex flex-col space-y-3">
-                    <img src="Collaborating with Microsoft 365.jpg" alt="Collaborating with Microsoft 365" class="w-full h-auto rounded-xl object-cover border border-slate-800">
-                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-purple-400/90 font-medium">Collaborating with M365</span><span class="bg-purple-500/10 text-purple-400 px-2 py-0.5 rounded text-[10px] font-semibold uppercase">M365 Suite</span></div>
+                    <img src="Collaborating with Microsoft 365.jpg" alt="Collaborating with Microsoft 365" class="w-full h-auto rounded-xl object-cover border border-stone-200">
+                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-stone-800 font-medium">Collaborating with M365</span><span class="bg-[#a38241]/10 text-[#a38241] px-2 py-0.5 rounded text-[10px] font-semibold uppercase">M365 Suite</span></div>
                 </div>
 
                 <div class="break-inside-avoid glow-card p-4 rounded-2xl flex flex-col space-y-3">
-                    <img src="Communication Foundations.jpg" alt="Communication Foundations" class="w-full h-auto rounded-xl object-cover border border-slate-800">
-                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-pink-400/90 font-medium">Communication Foundations</span><span class="bg-pink-500/10 text-pink-400 px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Soft Skills</span></div>
+                    <img src="Communication Foundations.jpg" alt="Communication Foundations" class="w-full h-auto rounded-xl object-cover border border-stone-200">
+                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-stone-800 font-medium">Communication Foundations</span><span class="bg-[#a38241]/10 text-[#a38241] px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Soft Skills</span></div>
                 </div>
 
                 <div class="break-inside-avoid glow-card p-4 rounded-2xl flex flex-col space-y-3">
-                    <img src="CR Management.jpg" alt="Customer Relationship Management" class="w-full h-auto rounded-xl object-cover border border-slate-800">
-                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-emerald-400/90 font-medium">CR Management</span><span class="bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded text-[10px] font-semibold uppercase">CRM Strategy</span></div>
+                    <img src="CR Management.jpg" alt="Customer Relationship Management" class="w-full h-auto rounded-xl object-cover border border-stone-200">
+                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-stone-800 font-medium">CR Management</span><span class="bg-[#a38241]/10 text-[#a38241] px-2 py-0.5 rounded text-[10px] font-semibold uppercase">CRM Strategy</span></div>
                 </div>
 
                 <div class="break-inside-avoid glow-card p-4 rounded-2xl flex flex-col space-y-3">
-                    <img src="Customer Management.jpg" alt="Customer Management" class="w-full h-auto rounded-xl object-cover border border-slate-800">
-                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-blue-400/90 font-medium">Customer Management</span><span class="bg-blue-500/10 text-blue-400 px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Client Relations</span></div>
+                    <img src="Customer Management.jpg" alt="Customer Management" class="w-full h-auto rounded-xl object-cover border border-stone-200">
+                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-stone-800 font-medium">Customer Management</span><span class="bg-[#a38241]/10 text-[#a38241] px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Client Relations</span></div>
                 </div>
 
                 <div class="break-inside-avoid glow-card p-4 rounded-2xl flex flex-col space-y-3">
-                    <img src="HR.jpg" alt="Human Resource Management" class="w-full h-auto rounded-xl object-cover border border-slate-800">
-                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-indigo-400/90 font-medium">Human Resources</span><span class="bg-indigo-500/10 text-indigo-400 px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Personnel</span></div>
+                    <img src="HR.jpg" alt="Human Resource Management" class="w-full h-auto rounded-xl object-cover border border-stone-200">
+                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-stone-800 font-medium">Human Resources</span><span class="bg-[#a38241]/10 text-[#a38241] px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Personnel</span></div>
                 </div>
 
                 <div class="break-inside-avoid glow-card p-4 rounded-2xl flex flex-col space-y-3">
-                    <img src="ISO 9001.jpg" alt="ISO 9001 Quality Standards" class="w-full h-auto rounded-xl object-cover border border-slate-800">
-                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-purple-400/90 font-medium">ISO 9001 Standards</span><span class="bg-purple-500/10 text-purple-400 px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Compliance</span></div>
+                    <img src="ISO 9001.jpg" alt="ISO 9001 Quality Standards" class="w-full h-auto rounded-xl object-cover border border-stone-200">
+                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-stone-800 font-medium">ISO 9001 Standards</span><span class="bg-[#a38241]/10 text-[#a38241] px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Compliance</span></div>
                 </div>
 
                 <div class="break-inside-avoid glow-card p-4 rounded-2xl flex flex-col space-y-3">
-                    <img src="Logistics Management.jpg" alt="Logistics Management" class="w-full h-auto rounded-xl object-cover border border-slate-800">
-                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-pink-400/90 font-medium">Logistics Management</span><span class="bg-pink-500/10 text-pink-400 px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Supply Chain</span></div>
+                    <img src="Logistics Management.jpg" alt="Logistics Management" class="w-full h-auto rounded-xl object-cover border border-stone-200">
+                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-stone-800 font-medium">Logistics Management</span><span class="bg-[#a38241]/10 text-[#a38241] px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Supply Chain</span></div>
                 </div>
 
                 <div class="break-inside-avoid glow-card p-4 rounded-2xl flex flex-col space-y-3">
-                    <img src="Managing Muliple Project.jpg" alt="Managing Multiple Projects" class="w-full h-auto rounded-xl object-cover border border-slate-800">
-                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-emerald-400/90 font-medium">Managing Multiple Projects</span><span class="bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Planning</span></div>
+                    <img src="Managing Muliple Project.jpg" alt="Managing Multiple Projects" class="w-full h-auto rounded-xl object-cover border border-stone-200">
+                    <div class="flex items-center justify-between text-[11px] pt-1"><span class="text-stone-800 font-medium">Managing Multiple Projects</span><span class="bg-[#a38241]/10 text-[#a38241] px-2 py-0.5 rounded text-[10px] font-semibold uppercase">Planning</span></div>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <footer class="py-8 text-center text-xs text-slate-600 border-t border-slate-900 bg-[#0f172a]">
+    <footer class="py-8 text-center text-xs text-stone-500 border-t border-stone-200 bg-[#f6f4f0]">
         <p>&copy; 2026 Jerwin Lumpay. All Rights Reserved.</p>
     </footer>
 
@@ -514,7 +514,6 @@
 
         mobileMenuToggle.addEventListener('click', toggleMenu);
 
-        // Fallback file-extension check logic to handle variation in photo saves (.png vs .jpg)
         const imgElement = document.getElementById('headshot-photo');
         imgElement.onerror = function() {
             if (this.src.endsWith('.png')) {
